@@ -1,0 +1,181 @@
+html,body {
+    font-size: 16px;
+    line-height: 1.6;
+    display: block;
+}
+
+/* main {
+    ;
+} */
+
+
+nav ul {
+    margin-right: 2rem;
+    list-style-type: none;
+    float: right;
+}
+
+.share {
+    background-color: aquamarine;
+    text-align: center;
+    width: 100%;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.share a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+article p, article header {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+header {
+    max-width: 600px;
+    width: 0 auto;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* p.has-drop-cap::first-letter {
+    font-size: 5rem;
+    float: left;
+    line-height: 0.5;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+} */
+
+.italic {
+    font-style: italic;
+}
+
+.sans-serif {
+    font-family: roboto, 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.imageRight {
+    width: 20%;
+    float: right;
+    margin-right: 25rem;
+    margin-left: 1rem;
+    margin-top: 0;
+}
+
+.imageRight img {
+    width: 18rem;
+}
+
+.imageLeft {
+    margin: 0;
+    padding: 0;
+}
+
+.imageLeft img {
+    width: 38%;
+    height: auto;
+    float: left;
+    padding-right: 2rem;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* video */
+
+video {
+    width: 100%;
+    margin: 0;
+}
+
+figure.video-container {
+    margin: 0;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+.white-font p {
+    color: white;
+    margin-bottom: 100vh;
+    padding: 2rem;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.white-font p:last-of-type {
+    margin-bottom: 0;
+}
+
+
+.white-font a {
+    color: white;
+}
+
+#full-width {
+    width: 100%;
+    margin: 0;
+}
+
+#full-width img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.behindText {
+    position: relative;
+}
+
+.hospital img {
+    width: 1340px;
+    height: auto;
+    left: 0;
+    right: 0rem;
+    top: -28rem;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* how to make this responsive? */
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgb(230, 229, 229);
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 4px;
+    background: black;
+    width: 0%;
+  }
