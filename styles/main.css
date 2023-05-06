@@ -10,6 +10,10 @@ html,body {
     background-image: url(../assets/paper-bg-03.jpg);
 }
 
+article {
+    padding-bottom: 5rem;
+}
+
 /* ROOT FONT STYLES */
 
 * {
@@ -99,10 +103,6 @@ article p {
     max-width: 600px;
     line-height: 1.8;
     padding-bottom: 1rem;
-}
-
-article p:last-of-type {
-    padding-bottom: 5rem;
 }
 
 article header {
