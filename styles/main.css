@@ -1,147 +1,33 @@
-html,body {
-    font-size: 16px;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    top: 0;
-    line-height: 1.6;
-    background-image: url(../assets/paper-bg-03.jpg);
-}
-
-article {
-    padding-bottom: 1rem;
-}
-
-/* ROOT FONT STYLES */
-
 * {
     font-family: Lora, Georgia, serif;
     color: #333447;
-    line-height: 1.5;
+    line-height: 1.6;
   }
-  
-  /* TYPOGRAPHY */
-  
+
+html,body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/paper-bg-03.jpg);
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100%;
+}
+
+
 h1 {
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 600;
     font-family: 'Playfair Display', 'times new roman', serif;
-    margin: 0.5rem 0;
+    margin: 0.15rem;
+    padding-bottom: 1rem;
   }
   
-h2 {
-    font-size: 2rem;
-  }
-  
-h3 {
-    font-size: 1.375rem;
-  }
-  
-  p {
+p {
     font-size: 1.125rem;
     font-weight: 400;
     line-height: 1.8;
   }
-
-/* main {
-    ;
-} */
-
-
-nav ul {
-    margin-right: 2rem;
-    list-style-type: none;
-    float: right;
-}
-
-.share {
-    background-color: aquamarine;
-    text-align: center;
-    width: 100%;
-    border: 1px solid black;
-    padding: 0.5rem;
-}
-
-.share a {
-    text-decoration: none;
-}
-
-nav a:hover {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* progress bar */ 
-
-/* Style the header: fixed position (always stay at the top) */
-.header {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: #f1f1f1;
-  }
-  
-  /* The progress container (grey background) */
-  .progress-container {
-    width: 100%;
-    height: 4px;
-    background: rgb(230, 229, 229);
-  }
-  
-  /* The progress bar (scroll indicator) */
-  .progress-bar {
-    height: 4px;
-    background: black;
-    width: 0%;
-  }
-
-article p {
-    margin: 0 auto;
-    max-width: 600px;
-    line-height: 1.8;
-    padding-bottom: 1rem;
-}
-
-article header {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 3rem;
-    font-family: 'Poppins', sans-serif;
-    display: block;
-}
-
-
-header p {
-    padding: 1.4rem 0 0.3rem;
-    text-align: center;
-}
-
-header p:last-of-type {
-    font-size: 1rem;
-}
-
-header img {
-    margin: 0 auto;
-    width: 90%;
-    display: block;
-    max-width: 600px;
-    padding-top: 3rem;
-}
-
-p.has-drop-cap::first-letter {
-    font-size: 4.8rem;
-    float: left;
-    line-height: 0.5;
-    margin-top: 1rem;
-    margin-right: 0.6rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0;
-    font-weight: 700;
-}
 
 .italic {
     font-style: italic;
@@ -152,48 +38,126 @@ p.has-drop-cap::first-letter {
     font-weight: 400;
 }
 
-.imageRight {
-    width: 20%;
-    float: right;
-    margin-right: 25rem;
-    margin-left: 1rem;
-    margin-top: 0;
-}
-
-.imageRight img {
-    width: 18rem;
-}
-
-.imageLeft {
+article p {
     margin: 0 auto;
-    padding: 0;
+    max-width: 600px;
+    width: 90%;
+    line-height: 1.8;
+    padding-bottom: 1.5rem;
 }
 
-.imageLeft img {
-    width: 38%;
-    height: auto;
+
+/* progress bar */
+
+/* Style the header: fixed position (always stay at the top) */
+.bar-header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+  
+  /* The progress container (grey background) */
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgb(230, 229, 229);
+  }
+  
+  /* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 4px;
+    background: black;
+    width: 0%;
+  }
+
+
+/* share buttons */
+
+.share-button img {
+    width: 1.2rem;
+    padding: 0.5rem;
+}
+
+.share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* header */
+
+header {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+header p:last-of-type {
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+header img {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 90%;
+    padding-top: 4rem;
+}
+
+/* drop cap */
+
+p.has-drop-cap::first-letter {
+    font-size: 4rem;
     float: left;
-    padding-right: 2rem;
-    padding-left: 0;
+    line-height: 0.5;
+    margin-top: 1rem;
+    margin-right: 0.6rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    font-weight: 700;
+}
+
+/* all images */
+
+.imageRight, .imageLeft, #full-width, .hospital {
+    margin: 0;
+    padding-bottom: 1.5rem;
+}
+
+.imageRight img, .imageLeft img, #full-width img, #hospital-mobile {
+    width: 100%;
     margin: 0 auto;
+    display: block;
+}
+
+
+#hospital-desktop {
+    display: none;
 }
 
 /* video */
 
 
-/* old css for video */
-/* 
-video {
-    width: 100%;
-    margin: 0;
-}
-
-figure.video-container {
+figure.video-container-v {
     margin: 0;
     position: sticky;
     top: 0;
     z-index: -1;
-} */
+    height: 100%;
+    width: auto;
+
+}
+
+#airport-v {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0 auto;
+}
 
 figure.video-container-h {
     margin: 0;
@@ -204,382 +168,102 @@ figure.video-container-h {
     z-index: -1;
 }
 
-video {
-    width: 100%;
-    height: auto;
+#airport-h {
+    display: none;
 }
+
+
+/* text over video */
 
 .white-font p {
     color: white;
-    margin-bottom: 100vh;
-    padding: 2rem;
     background-color: rgb(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-bottom: 90vh;
 }
-
-
-.white-font #empty {
-    background-color: rgb(0, 0, 0, 0);
-    padding-top: 80vh;
-    margin-bottom: 1rem;
-    /* border: 1px solid red; */
-}
-
 
 .white-font a {
     color: white;
 }
 
-#full-width {
-    width: 100%;
-    margin: 0;
-    padding: 1rem 0;
-}
-
-#full-width img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+#empty {
+    background-color: rgb(0, 0, 0, 0);
+    padding-top: 80vh;
+    margin-bottom: 1rem;
 }
 
 figcaption {
     text-align: left;
     font-size: 0.8rem;
-    padding-left: 0.5rem;
-    color: darkgray;
+    padding-left: 0.1rem;
+    color: #414141;
 }
 
-.behindText {
-    position: relative;
-}
+/* footer */
 
-.hospital img {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    left: 0;
-    right: 0rem;
-    top: -28rem;
-    bottom: 0;
-    position: absolute;
-    z-index: -1;
+article {
+    padding-bottom: 2rem;
 }
 
 footer {
     border-top: darkgrey 1px solid;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    max-width: 600px;
 }
 
 footer p {
-    font-family: roboto, sans-serif;
+    font-family: roboto, 'Helvetica Neue', sans-serif;
     text-align: center;
     margin: 0.2rem 0;
     font-size: 1rem;
 }
 
-footer p:first-child {
+footer p:first-of-type {
     padding-top: 1rem;
 }
 
-p.bold {
+.bold {
     font-weight: 700;
     margin: 0;
 }
 
 
 
+/* media queries */
 
-/* how to make this responsive? */
+@media only screen and (min-width: 33.75em) /* 540px */ {
 
-/* media query */
-
-@media screen and (max-width: 600px) {
-    article p {
-        width: 90%;
-    }
-    
     h1 {
-        font-size: 2.8rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', serif;
-        line-height: 1.5;
-      }
-
-    header p {
-        padding-top: 0rem;
-        font-size: 1rem;
-    }
-
-    header img {
-        margin: 0 auto;
-        width: 95%;
-        display: block;
-        max-width: 600px;
-        padding-top: 1rem;
-        float: none;
-    }
-
-    .imageRight {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        float: none;
-        display: block;
-    }
-
-    .imageRight img {
-        padding: 1rem 0;
-        display: block;
-        width: 100%;
-    }
-
-    figure.imageLeft {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .imageLeft img {
-        width: 90%;
-        margin: 0 auto;
-        float: none;
-        padding: 1rem 0 1rem 0.5rem;
-    }
-
-    .behindText {
-        position: static;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .hospital {
-        margin: 0;
-    }
-
-    #hospital-desktop {
-        display: none;
-    }
-
-    #hospital-mobile {
-        display: block;
-        margin: 0;
-        width: 100%;
-        position: static;
-        padding: 1rem 0 2rem 0;
-    }
-
-    #airport-h {
-        display: none;
-    }
-
-    figure.video-container-v {
-        margin: 0;
-        position: sticky;
-        top: 0;
-        z-index: -1;
-        height: 100%;
-        width: auto;
-    }
-
-    #airport-v {
-        width: 110vw;
-        height: 120vh;
-        object-fit: cover;
-        margin: 0 auto;
-    }
-
-    #airport-h {
-        display: none;
+        font-size: 3.5rem;
     }
 
 
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
-    article p {
-        width: 90%;
-    }
-    
-    header img {
-        margin: 0 auto;
-        width: 95%;
-        display: block;
-        max-width: 600px;
-        padding-top: 1rem;
-        float: none;
-    }
-    
-    h1 {
-        font-size: 3.5rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', serif;
-        line-height: 1.5;
-      }
-
-    header p {
-        padding: 0rem 1rem 0.5rem;
-        font-size: 1rem;
-    }
-
+@media only screen and (min-width: 45em) {  /* 720px */
     .imageRight {
-        width: 100%;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        float: none;
-        display: block;
-    }
-
-    .imageRight img {
-        padding: 1rem 0;
-        display: block;
-        width: 100%;
-    }
-
-    figure.imageLeft {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .imageLeft img {
-        width: 90%;
-        margin: 0 auto;
-        float: none;
-        padding: 1rem 0;
-    }
-
-    .behindText {
-        position: static;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .hospital {
-        margin: 0;
-    }
-
-    #hospital-desktop {
-        display: none;
-    }
-
-    #hospital-mobile {
-        display: block;
-        margin: 0;
-        width: 100%;
-        position: static;
-        padding: 1rem 0 2rem 0;
-    }
-
-    #airport-h {
-        display: none;
-    }
-
-    figure.video-container-v {
-        margin: 0;
-        position: sticky;
-        top: 0;
-        z-index: -1;
-        height: 100%;
-        width: auto;
-    }
-
-    #airport-v {
-        width: 110vw;
-        height: 120vh;
-        object-fit: cover;
-        margin: 0 auto;
-    }
-
-    #airport-h {
-        display: none;
-    }
-    
-}
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-    article p {
-        width: 90%;
-    }
-    
-    header img {
-        margin: 0 auto;
-        width: 90%;
-        display: block;
-        max-width: 600px;
-        padding-top: 4rem;
-        float: none;
-    }
-    
-    h1 {
-        font-size: 3.5rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', serif;
-        line-height: 1.5;
-      }
-
-    header p {
-        padding: 0.5rem 0rem 1rem;
-        font-size: 1.2rem;
-        margin: 0 auto;
-    }
-
-    .imageRight {
-        width: 16rem;
-        height: auto;
-        margin-right: 6rem;
-        padding-left: 1.5rem;
-        overflow-x: hidden;
         float: right;
-        display: block;
+        width: 35%;
+        margin-right: 12%;
+        padding-left: 2%;
     }
 
-    .imageRight img {
-        display: block;
-        width: 100%;
-    }
-
-    figure.imageLeft {
+    .imageLeft {
+        width: 80%;
         margin: 0 auto;
-        width: 90%;
-        float: none;
-        display: block;
     }
 
-    .imageLeft img {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
-        display: block;
-    }
+}
 
-    .behindText {
-        position: static;
-        margin: 0 auto;
-        width: 100%;
-    }
+@media only screen and (min-width: 60em) { /* 960px */
 
-    .hospital {
-        margin: 0;
+    .imageRight {
+        width: 20%;
+        margin-right: 23rem;
     }
-
-    #hospital-desktop {
+    
+    #airport-v {
         display: none;
-    }
-
-    #hospital-mobile {
-        display: block;
-        margin: 0;
-        width: 100%;
-        position: static;
-        padding: 1rem 0 2rem 0;
     }
 
     figure.video-container-h {
@@ -599,230 +283,42 @@ p.bold {
         display: block;
     }
 
-    #airport-v {
-        display: none;
-    }
-
-}
-
-@media (min-width: 992px) and (max-width:1199) {
-    article p {
-        width: 90%;
-    }
-    
-    header img {
-        margin: 0 auto;
-        display: block;
-        max-width: 600px;
-        padding-top: 0.5rem;
-        float: none;
-        width: 90%;
-        padding-top: 4rem;
-    }
-    
-    h1 {
-        font-size: 5rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', serif;
-        line-height: 1.3;
-      }
-
-    header p {
-        padding: 0.5rem 0rem 1rem;
-        font-size: 1.2rem;
-        margin: 0 auto;
-    }
-
-    .imageRight {
-        width: 21%;
-        height: auto;
-        margin-right: 23%;
-        padding-left: 1.5rem;
-        overflow-x: hidden;
-        float: right;
-        display: block;
-    }
-
-    .imageRight img {
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
-
-    figure.imageLeft {
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .imageLeft img {
-        width: 35%;
-        float: left;
-        padding: 1rem 3rem 1rem 0;
-        margin: 0;
-    }
-
-    .behindText {
-        position: static;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .hospital {
-        margin: 0;
-    }
-
-
     #hospital-mobile {
         display: none;
+    }
+
+    #hospital-desktop {
+        width: 103%;
+        display: block;
+        margin: 0 auto;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -15rem;
+        bottom: 0;
     }
 
     .behindText {
         position: relative;
     }
-    
-   #hospital-desktop {
-       display: block;
-        width: 102%;
-        height: auto;
-        margin: 0 auto;
-        left: 0;
-        right: 0rem;
-        top: -28rem;
-        bottom: 0;
-        position: absolute;
-        z-index: -1;
-    }
-
-    figure.video-container-h {
-        margin: 0;
-        position: sticky;
-        top: 0;
-        z-index: -1;
-        height: 100%;
-        width: auto;
-    }
-
-    #airport-h {
-        width: auto;
-        height: 100vh;
-        object-fit: cover;
-        margin: 0 auto;
-        display: block;
-    }
-
-    #airport-v {
-        display: none;
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    article p {
-        width: 90%;
-    }
-    
-    header img {
-        margin: 0 auto;
-        display: block;
-        max-width: 600px;
-        padding-top: 0.5rem;
-        float: none;
-        width: 90%;
-        padding-top: 4rem;
-    }
-    
-    h1 {
-        font-size: 5rem;
-        font-weight: 600;
-        margin: 0.5rem 0;
-        font-family: 'Playfair Display', serif;
-        line-height: 1.3;
-      }
-
-    header p {
-        padding: 0.5rem 0rem 1rem;
-        font-size: 1.2rem;
-        margin: 0 auto;
-    }
-
-    .imageRight {
-        width: 19%;
-        height: auto;
-        margin-right: 29%;
-        padding-left: 1.5rem;
-        overflow-x: hidden;
-        float: right;
-        display: block;
-    }
-
-    .imageRight img {
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
-
-    figure.imageLeft {
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .imageLeft img {
-        width: 35%;
-        float: left;
-        padding: 1rem 3rem 1rem 0;
-        margin: 0;
-    }
-
-    .behindText {
-        position: static;
-        margin: 0 auto;
-        width: 100%;
-    }
 
     .hospital {
-        margin: 0;
+        padding-bottom: 0;
     }
 
-
-    #hospital-mobile {
-        display: none;
-    }
-
-    .behindText {
-        position: relative;
-    }
-    
-   #hospital-desktop {
-       display: block;
-        width: 102%;
-        height: auto;
-        margin: 0 auto;
-        left: 0;
-        right: 0rem;
-        top: -28rem;
-        bottom: 0;
-        position: absolute;
-        z-index: -1;
-    }
-
-    #airport-v {
-        display: none;
-    }
-
-    figure.video-container-h {
-        margin: 0;
-        width: 100%;
-        height: auto;
-        position: sticky;
-        top: 0;
-        z-index: -1;
-    }
-    
-    #airport-h {
-        width: 100%;
-        height: auto;
+    .imageLeft {
+        width: 50%;
     }
 
 }
+
+@media (min-aspect-ratio:16/9){
+    #airport-h {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+
